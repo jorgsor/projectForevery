@@ -5,20 +5,20 @@
 <title>projectForevery</title>
 </head>
 <?php
-// PHP Data Objects(PDO) Sample Code:
-try {
-    $conn = new PDO("sqlsrv:server = tcp:forevery.database.windows.net,1433; Database = forevery", "jorgen.sorheim", "{Jf89j9825q!}");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'myforevery.mysql.database.azure.com');
+define('DB_USERNAME', 'jorgensorheim@myforevery');
+define('DB_PASSWORD', 'Jf89j9825q!');
+define('DB_NAME', 'myforevery');
+ 
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
-
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "jorgen.sorheim", "pwd" => "{Jf89j9825q!}", "Database" => "forevery", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:forevery.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
 ?>
 <body>
 </body>
