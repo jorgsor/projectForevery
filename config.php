@@ -10,7 +10,7 @@ server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'myforevery.mysql.database.azure.com');
 define('DB_USERNAME', 'jorgensorheim@myforevery');
 define('DB_PASSWORD', 'Jf89j9825q!');
-define('DB_NAME', 'myforevery');
+define('DB_NAME', 'forevery');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
