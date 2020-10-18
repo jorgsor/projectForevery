@@ -1,3 +1,9 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>projectForevery</title>
+</head>
 <?php
 // Include config file
 require_once "config.php";
@@ -131,5 +137,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>    
+</body>
+</html>
+<body>
 </body>
 </html>

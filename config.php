@@ -1,3 +1,9 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>projectForevery</title>
+</head>
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -14,3 +20,6 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 ?>
+<body>
+</body>
+</html>
