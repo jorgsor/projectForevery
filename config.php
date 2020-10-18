@@ -8,7 +8,7 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'forevery.database.windows.net');
-define('DB_USERNAME', 'jorgen.sorheim');
+define('DB_USERNAME', 'jorgen.sorheim@southbrook.capital');
 define('DB_PASSWORD', 'Jf89j9825q!');
 define('DB_NAME', 'forevery');
  
