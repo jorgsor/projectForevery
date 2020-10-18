@@ -10,7 +10,7 @@ server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'forevery.database.windows.net');
 define('DB_USERNAME', 'jorgen.sorheim@southbrook.capital');
 define('DB_PASSWORD', 'Jf89j9825q!');
-define('DB_NAME', 'users');
+define('DB_NAME', 'forevery');
  
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
