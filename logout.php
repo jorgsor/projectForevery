@@ -13,7 +13,7 @@ header("location: login.php");
 exit;
 ?>
 Adding the Password Reset Feature
-Finally, in this section we will add the password reset utility to our login system. Using this feature logged in dbo.users can instantly reset their own password for their accounts.
+Finally, in this section we will add the password reset utility to our login system. Using this feature logged in users can instantly reset their own password for their accounts.
 
 Let's create a file named "reset-password.php" and place the following code inside it.
 
@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before updating the database
     if(empty($new_password_err) && empty($confirm_password_err)){
         // Prepare an update statement
-        $sql = "UPDATE dbo.users SET password = ? WHERE id = ?";
+        $sql = "UPDATE users SET password = ? WHERE id = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
